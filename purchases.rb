@@ -15,7 +15,8 @@ loop {
 
 purchases.each { |name, info|
   puts "Название товара: #{name}, 
-  в корзине #{info[:quantity]} шт. по цене #{info[:price]} за ед. товара."
+  в корзине #{info[:quantity]} шт. по цене #{info[:price]} за ед. товара.
+  Итоговая сумма за товар: #{info[:quantity] * info[:price]}"
   sum += info[:quantity] * info[:price]
 }
 
